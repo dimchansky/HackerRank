@@ -1,7 +1,7 @@
 HackerRank
 ==========
 
-Solutions for HackerRank problems in Haskell
+Solutions for [HackerRank](https://www.hackerrank.com/) problems in Haskell
 
 - Algorithms
   - Warmup
