@@ -4,7 +4,7 @@ import Control.Monad (replicateM)
 
 isPerfectSquare :: Integer -> Bool
 isPerfectSquare n = sq * sq == n
-    where sq = truncate $ sqrt $ (fromIntegral n :: Double)
+    where sq = truncate $ sqrt (fromIntegral n :: Double)
 
 -- A positive integer n is a Fibonacci number if and only if one or both of 5x^2+4 or 5x^2-4 is a perfect square.
 isFibonacciNumber :: Integer -> Bool
