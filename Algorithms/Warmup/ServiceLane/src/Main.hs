@@ -1,6 +1,7 @@
 module Main(main) where
 
-import Control.Monad (liftM, replicateM)
+import Data.Functor ((<$>))
+import Control.Monad (replicateM)
 import Data.Array ((!), Array, listArray)
 import Data.List (partition) 
 
@@ -17,9 +18,9 @@ largestWidth arr (i,j) = minimum (wide ++ take 1 narrow)
 
 main :: IO ()
 main = do
-    (segments, tests) <- liftM readTwoInts getLine
-    widths <- liftM (listArray (0, segments - 1) . take segments . readInts) getLine
-    ijs <- liftM (map readTwoInts) $ replicateM tests getLine
+    (segments, tests) <- readTwoInts <$> getLine
+    widths <- listArray (0, segments - 1) . take segments . readInts <$> getLine
+    ijs <- map readTwoInts <$> replicateM tests getLine
     let solution = map (largestWidth widths) ijs
     mapM_ print solution
           
