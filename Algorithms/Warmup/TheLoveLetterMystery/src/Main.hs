@@ -2,7 +2,6 @@ module Main(main) where
 
 import Data.Function (on)
 import Control.Monad (replicateM)
-import Control.Applicative ((<$>))
 import Data.Char (ord)
 
 charsDistance :: Char -> Char -> Int
@@ -14,7 +13,5 @@ getPalindromeOps str = sum . take half_len $ zipWith charsDistance str (reverse 
           half_len = len `div` 2
 
 main :: IO ()
-main = do
-    tests <- readLn
-    testWords <- replicateM tests getLine
-    mapM_ print $ getPalindromeOps <$> testWords
+main = mapM_ (print . getPalindromeOps) =<<
+  flip replicateM getLine =<< readLn
