@@ -10,4 +10,5 @@ Solutions for [HackerRank](https://www.hackerrank.com/) problems in Haskell
     - [Utopian Tree](https://www.hackerrank.com/challenges/utopian-tree) ([solution](Algorithms/Warmup/UtopianTree/src/Main.hs))
     - [The Love-Letter Mystery](https://www.hackerrank.com/challenges/the-love-letter-mystery) ([solution](Algorithms/Warmup/TheLoveLetterMystery/src/Main.hs))
     - [Gem Stones](https://www.hackerrank.com/challenges/gem-stones) ([solution](Algorithms/Warmup/GemStones/src/Main.hs))
+    - [Halloween party](https://www.hackerrank.com/challenges/halloween-party) ([solution](Algorithms/Warmup/HalloweenParty/src/Main.hs))
     - [Is Fibo](https://www.hackerrank.com/challenges/is-fibo) ([solution](Algorithms/Warmup/IsFibo/src/Main.hs))
