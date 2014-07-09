@@ -2,8 +2,8 @@ module Main where
 
 import Control.Monad (replicateM)
 
-howManyChocolates :: (Int,Int,Int) -> Int
-howManyChocolates (n, c, m) = count n 0 0
+howManyChocolates :: Int -> Int -> Int -> Int
+howManyChocolates n c m = count n 0 0
     where count money wrappers chocolates 
                 | money < c && wrappers < m = chocolates
                 | money >= c = let (chocolatesAdd, moneyLeft) = money `divMod` c 
@@ -14,10 +14,8 @@ howManyChocolates (n, c, m) = count n 0 0
 main :: IO ()
 main =  readLn >>=
         flip replicateM getLine >>= 
-        mapM_ (print . howManyChocolates . readLn3Ints)
+        mapM_ (print . readLineTo howManyChocolates)
     where   
         readInts = map read . words
-        readLn3Ints s = (a,b,c)
-            where a:b:[c] = readInts s 
-        
-        
+        readLineTo f s = f a b c
+            where [a, b, c] = readInts s
