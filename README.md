@@ -12,4 +12,5 @@ Solutions for [HackerRank](https://www.hackerrank.com/) problems in Haskell
     - [Gem Stones](https://www.hackerrank.com/challenges/gem-stones) ([solution](Algorithms/Warmup/GemStones/src/Main.hs))
     - [Halloween party](https://www.hackerrank.com/challenges/halloween-party) ([solution](Algorithms/Warmup/HalloweenParty/src/Main.hs))
     - [Maximizing XOR](https://www.hackerrank.com/challenges/maximizing-xor) ([solution](Algorithms/Warmup/MaximizingXOR/src/Main.hs))
+    - [Chocolate Feast](https://www.hackerrank.com/challenges/chocolate-feast) ([solution](Algorithms/Warmup/ChocolateFeast/src/Main.hs))
     - [Is Fibo](https://www.hackerrank.com/challenges/is-fibo) ([solution](Algorithms/Warmup/IsFibo/src/Main.hs))
